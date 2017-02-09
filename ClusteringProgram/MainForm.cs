@@ -184,7 +184,7 @@ namespace ClusteringProgram
                 var clusterAsList = new List<CPPoint>(cluster);
                 var color = colors[i % colors.Length];
                 AddStatistics((i + 1).ToString() + ". Cluster", color);
-                AddStatistics("CPPoint Count: " + cluster.Count, color);
+                AddStatistics("Point Count: " + cluster.Count, color);
                 var massCenter = Helper.GetMassCenter(clusterAsList);
                 AddStatistics("Mass Center: " + massCenter + "", color);
 
